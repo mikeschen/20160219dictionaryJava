@@ -9,27 +9,27 @@ import static org.fluentlenium.core.filter.FilterConstructor.*;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class AppTest extends FluentTest {
-  public WebDriver webDriver = new HtmlUnitDriver();
+//   public WebDriver webDriver = new HtmlUnitDriver();
   
-  @Override
-  public WebDriver getDefaultDriver() {
-    return webDriver;
-  }
+//   @Override
+//   public WebDriver getDefaultDriver() {
+//     return webDriver;
+//   }
 
-  @ClassRule
-  public static ServerRule server = new ServerRule();
+//   @ClassRule
+//   public static ServerRule server = new ServerRule();
 
-  @Test
-  public void rootTest() {
-    goTo("http://localhost:4567/");
-    assertThat(pageSource()).contains("Dictionary");
-  }
+//   @Test
+//   public void rootTest() {
+//     goTo("http://localhost:4567/");
+//     assertThat(pageSource()).contains("Dictionary");
+//   }
 
-  @Test
-  public void returnsDefinition() {
-    goTo("http://localhost:4567");
-    fill("#word").with("canine");
-    submit(".btn");
-    assertThat(pageSource()).contains("a dog.");
-  }
+//   @Test
+//   public void returnsDefinition() {
+//     goTo("http://localhost:4567");
+//     fill("#word").with("canine");
+//     submit(".btn");
+//     assertThat(pageSource()).contains("a dog.");
+//   }
 }

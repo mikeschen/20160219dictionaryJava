@@ -1,11 +1,11 @@
-import org.junit.rules.ExternalResource;
+// import org.junit.rules.ExternalResource;
 
-public class ClearRule extends ExternalResource {
+// public class ClearRule extends ExternalResource {
 
-  protected void before() {}
+//   protected void before() {}
 
-  protected void after() {
-    Definition.clear();
-    Word.clear();
-  }
-}
+//   protected void after() {
+//     Definition.clear();
+//     Word.clear();
+//   }
+// }

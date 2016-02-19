@@ -1,1 +1,1 @@
-web: ./build/install/pingpong/bin/definition
+web: ./build/install/definition/bin/definition

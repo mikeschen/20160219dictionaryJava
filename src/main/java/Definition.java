@@ -1,5 +1,13 @@
+import java.time.LocalDateTime;
+import java.util.ArrayList;
+
 public class Definition {
-  public Definition (String name) {
-    //code here
+  private String mDescription;
+
+  public Definition (String description) {
+  	mDescription = description;
+  }
+  public String getDescription() {
+  	return mDescription;
   }
 }
