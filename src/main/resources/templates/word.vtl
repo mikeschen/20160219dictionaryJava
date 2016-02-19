@@ -1,0 +1,8 @@
+word.vtl
+<h3>Here are all the definitions for this word:</h3>
+#foreach($definition in $word.getDefinitions())
+ <h3>$definition.getDescription()</a></h3>
+#end
+
+<a href="/words/$word.getId()/definitions/new">Add a new definition</a>
+<a href="/">Return to Main Page</a>
