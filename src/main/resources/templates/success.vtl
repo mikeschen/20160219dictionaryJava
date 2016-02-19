@@ -1,4 +1,8 @@
-<h1>Your Definition</h1>
+<h1>Success!</h1>
 success.vtl
-$results
-
+#if ($definition)
+	<p>Your definition has been saved.</p>
+#elseif ($category)
+	<p>Your word has been saved.</p>
+#end
+<a href="/words">View All Words</a>

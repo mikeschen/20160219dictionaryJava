@@ -15,4 +15,10 @@ public class DefinitionTest {
 		assertEquals(true, testDefinition instanceof Definition);
 	}
 
+	 @Test
+  	public void newDefinition_displayADefinition() {
+    Definition testDefinition = new Definition("a dog.");
+    assertEquals("a dog.", testDefinition.getDescription());
+  }
+
 }
