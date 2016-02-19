@@ -36,7 +36,7 @@ public class AppTest extends FluentTest {
 
   @Test
   public void wordIsDisplayedTest() {
-    goTo("http://localhost:4567/words/new");
+    goTo("http://localhost:4567/new");
     fill("#name").with("Canine");
     submit(".btn");
     click("a", withText("View All Words"));
@@ -45,7 +45,7 @@ public class AppTest extends FluentTest {
 
   @Test
   public void wordDescriptionFormIsDisplayed() {
-    goTo("http://localhost:4567/words/new");
+    goTo("http://localhost:4567/new");
     fill("#name").with("Feline");
     submit(".btn");
     click("a", withText("View All Words"));
@@ -56,7 +56,7 @@ public class AppTest extends FluentTest {
 
   @Test
   public void DescriptionssIsAddedAndDisplayed() {
-    goTo("http://localhost:4567/words/new");
+    goTo("http://localhost:4567/new");
     fill("#name").with("simian");
     submit(".btn");
     click("a", withText("View All Words"));

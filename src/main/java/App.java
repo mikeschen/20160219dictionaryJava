@@ -7,6 +7,7 @@ import static spark.Spark.*;
 
 public class App {
   public static void main(String [] args){
+    staticFileLocation("/public");
     ProcessBuilder process = new ProcessBuilder();
     Integer port;
     if (process.environment().get("PORT") != null) {
@@ -16,13 +17,18 @@ public class App {
     }
       
     setPort(port);
-    staticFileLocation("/public");
     String layout = "templates/layout.vtl";
 
     get("/", (request, response) -> {
       HashMap<String,Object>model = new HashMap<String, Object>();
       model.put("template", "templates/index.vtl");
-      model.put("/", Word.all());
+      model.put("words", Word.all());
+      return new ModelAndView(model, layout);
+    }, new VelocityTemplateEngine());
+
+    get("/example", (request, response) -> {
+      HashMap<String, Object> model = new HashMap<String, Object>();
+      model.put("template", "templates/example.vtl");
       return new ModelAndView(model, layout);
     }, new VelocityTemplateEngine());
 
