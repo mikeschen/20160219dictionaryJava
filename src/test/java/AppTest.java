@@ -35,7 +35,7 @@ public class AppTest extends FluentTest {
   }
 
   @Test
-  public void categoryIsDisplayedTest() {
+  public void wordIsDisplayedTest() {
     goTo("http://localhost:4567/words/new");
     fill("#name").with("Canine");
     submit(".btn");
@@ -44,7 +44,7 @@ public class AppTest extends FluentTest {
   }
 
   @Test
-  public void categoryTasksFormIsDisplayed() {
+  public void wordDescriptionFormIsDisplayed() {
     goTo("http://localhost:4567/words/new");
     fill("#name").with("Feline");
     submit(".btn");
@@ -55,7 +55,7 @@ public class AppTest extends FluentTest {
   }
 
   @Test
-  public void tasksIsAddedAndDisplayed() {
+  public void DescriptionssIsAddedAndDisplayed() {
     goTo("http://localhost:4567/words/new");
     fill("#name").with("simian");
     submit(".btn");
