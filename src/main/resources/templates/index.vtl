@@ -1,4 +1,8 @@
 <h1>Portlandia Dictionary</h1>
 index.html
-<a href="/words">View Word List</a><br>
-<a href="/words/new">Add a New Word</a>
+<h1>Words</h1>
+<h3>Click word to add a definition</h3>
+#foreach($word in $words)
+  <h3><a href="/$word.getId()">$word.getName()</a></h3>
+#end
+<a href="/new">Add a New Word</a>
