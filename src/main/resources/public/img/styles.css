@@ -1,0 +1,13 @@
+body {
+  color: white;
+  background-color: black;
+}
+
+a: link {
+  color: #c6e2ff;
+}
+
+.jumbotron {
+  background-image: url("/img/jumbo.jpg");
+  background-size: cover;
+}

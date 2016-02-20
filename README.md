@@ -1,6 +1,6 @@
-# Portlandia Dictionary
+# Dictionary
 
-#### Creates a word puzzle from a sentence by removing vowels, February 12, 2016.
+#### Creates a dictionary for users to enter words and definitions, February 19, 2016.
 
 #### By Michael Schennum
 
