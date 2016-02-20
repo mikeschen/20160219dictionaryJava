@@ -8,6 +8,9 @@
 
 This was created as an Epicodus exercise in Behavior Driven Development, web app development with Spark and Velocity, and solo programming.
 
+## Deployment
+Available online at [Heroku](https://safe-badlands-82847.herokuapp.com/)
+
 ## Setup/Installation Requirements
 
 * Clone this repository.
